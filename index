@@ -1,0 +1,654 @@
+<!DOCTYPE html> 
+<!-- Ms Math Master Apps -->
+<!-- Frankie Bailey, 2/2016 -->
+<!-- Euclid - A Geometry Primer --> 
+<html lang="en"> 
+<head> 
+<title>Euclid - A Geometry Primer</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" type="text/css">
+
+<link rel="StyleSheet" href="GeomStyle.css" type="text/css">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+<script type="text/javascript" src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+</head>
+ 
+<body><!-- Euclid contains 8 pages -->
+
+<!-- documentation page [pg1] -->
+<div data-role="page" id="AboutGeom" data-theme="c">
+<div data-role="header" data-position="fixed">
+<a href="javascript:history.go(-1)" data-transition="fade">Back</a>
+<h1>Euclid</h1>
+<a href="#AboutGeom" data-transition="fade">About</a>
+</div><!-- /header -->
+
+<div data-role="content">
+<article> 
+<img class="head" src="MMMlogo.png" width="220" height="60" alt="MMM Header Logo">
+
+<div data-role="collapsible">
+<h3>What is Euclid?</h3>
+<p class="instruction">
+Euclid is a WHO. Euclid of Alexandria was a Greek mathematician, often referred to as the "Father of Geometry". He was active in Alexandria during the reign of Ptolemy I - approximately 330 B.C. to 260 B.C.<br><br>
+<img class="page" src="Euclid.jpg" width="75" height="75" alt="Euclid"></p>
+<p class="instruction">
+Many scholars worked and taught in Alexandria, and that's where Euclid wrote <em>The Elements</em>.
+<em>The Elements</em> is divided into thirteen books which cover plane geometry, arithmetic and number theory, irrational numbers, and solid geometry.</p>
+ </div><!-- /collapse -->
+
+<p class="doc"><em>Euclid</em> is a short geometry primer that includes a few of the most basic and well known principles of plane geometry with emphasis on practical use, enjoyment, and beauty. </p>
+
+<p class="doc">The topics are presented in simple, clear, visual, informal terms; no attempt is made to be "mathematically rigorous." Each topic includes a self quiz and a final exam is offered at the end of "the course".</p>
+
+<p class="doc">
+<em>Euclid</em> is an apps project of <a href="http://msmathmaster.com"><em>Ms Math Master</em></a> that includes elementary lesson drills and simple puzzles.</p>
+
+<p class="foot">Copyright &copy; iXB 2016&nbsp;<a class="credits" href="http://ixorabrown.com">iXoraBrown Web Design</a>
+Lakewood Ranch, Florida. All rights reserved.
+Euclid v3.0.0<br>
+</p>
+
+</article>
+</div><!-- /content -->
+
+<div data-role="footer" data-position="fixed">
+<div data-role="navbar" data-id="AboutMenu"> 
+<ul>
+<li><a href="#Contents" data-transition="fade">Contents</a></li> 
+</ul> 
+</div><!-- /navbar --> 
+</div><!-- /footer -->
+</div><!-- /AboutGeom page -->
+
+
+<!-- Table of Contents [pg2] -->
+<div data-role="page" id="Contents" data-theme="c">
+<div data-role="header" data-position="fixed">
+<a href="javascript:history.go(-1)" data-transition="fade">Back</a>
+<h1>Contents</h1>
+<a href="#AboutGeom" data-transition="fade">About</a>
+</div><!-- /header -->
+
+<div data-role="content">
+<article>
+<img class="head" src="MMMlogo.png" alt="MMM Header">
+
+<section data-role="controlgroup">
+<a href="#LinesAngles" data-role="button" data-theme="c" data-transition="fade">Lines and Angles</a>
+<a href="#ParallelLines" data-role="button" data-theme="c" data-transition="fade">Parallel Lines</a>
+<a href="#Triangles"
+ data-role="button" data-theme="c" data-transition="fade">Triangles</a>
+<a href="#PythagoreanTheorem"
+ data-role="button" data-theme="c" data-transition="fade">Pythagorean Theorem</a>
+<a href="#Rectangle"
+ data-role="button" data-theme="c" data-transition="fade">The Rectangle</a>
+<a href="#FinalExam" data-role="button" data-theme="c" data-transition="fade">Final Exam</a>
+
+</section> 
+
+</article> 
+</div><!-- /content -->
+
+<div data-role="footer" data-position="fixed">
+<div data-role="navbar" data-id="Contentsmenu"> 
+<ul>
+</ul> 
+</div><!-- /navbar --> 
+</div><!-- /footer -->
+</div><!-- /Contents -->
+
+
+<!-- Lines and Angles [pg3] -->
+<div data-role="page" id="LinesAngles" data-theme="c">
+<div data-role="header" data-position="fixed">
+<a href="javascript:history.go(-1)" data-transition="fade">Back</a>
+<h1>Lines and Angles</h1>
+<a href="#AboutGeom" data-transition="fade">About</a>
+</div><!-- /header -->
+
+<div data-role="content">
+<article> 
+<img class="page" src="imagesPg3/Lesson1.jpg" width="150" height="99" alt="Lesson1 Logo">
+
+<div data-role="collapsible-set">
+
+<div data-role="collapsible">
+<h3>Lines and Parts</h3>
+<img class="page" src="imagesPg3/basics.jpg" width="240" height="175" alt="Points and Lines">
+<p class="instruction">
+Point and line are undefined ideas of Euclidean Geometry. Points have position; lines are infinite in both directions; segments and rays are parts of lines, the first being definite and the second extending infinitely from a single point. An angle is formed by two rays.</p>
+<img class="page" src="imagesPg3/sunrays.jpg" width="107" height="93" alt="Sun's Rays">
+<p class="instruction">
+
+The Sun Safety Alliance [www.sunsafetyalliance.org] 
+is dedicated to reducing the incidence of skin cancer from the sun's rays and creating awareness of this important health issue.
+</p>
+</div><!-- /collapse -->
+
+<div data-role="collapsible">
+<h3>Angle Classification</h3>
+<img class="page" src="imagesPg3/angles.jpg" width="240" height="175" alt="Types of Angles">
+<p class="instruction">
+An angle is measured in degrees which represents the amount of rotation between the rays. A full rotation is 360&#8728;. It takes the earth about 360 days to make one trip around the sun.
+</p>
+</div><!-- /collapse -->
+
+<div data-role="collapsible">
+<h3>Vertical Angles</h3>
+<img class="page" src="imagesPg3/vertical.jpg" width="185" height="140" alt="Vertical Angles">
+<p class="instruction">
+When two lines intersect, four angles are formed. The opposite angles are called "vertical angles" and VERTICAL ANGLES ARE EQUAL. If two angles "sit" on a straight line they are called a "linear pair" and their sum is 180&#8728;. The sum of all the angles around a point is 360&#8728;.
+</p>
+</div><!-- /collapse -->
+
+<div data-role="collapsible">
+<h3>Perpendicular Lines</h3>
+<img class="page" src="imagesPg3/perpendicular.jpg" width="149" height="125" alt="Perpendicular Lines">
+<p class="instruction">
+When two lines intersect in right angles, they are called "perpendicular lines." Notice that the vertical angles are 90&#8728; and still equal and all the pairs sitting on a line add to 180&#8728;.
+</p>
+</div><!-- /collapse -->
+
+<div data-role="collapsible">
+<h3>Self Quiz</h3>
+<ol>
+<li>Classify the angle.<br>
+<img class="page" src="imagesPg3/right.jpg" width="100" height="100" alt="Right Angle"></li>
+<li>If &#8736;a is 60&#8728;, what is the measure of &#8736;b?
+<br>
+<img class="page" src="imagesPg3/supp.jpg" width="150" height="83" alt="Supplementary Angles"></li>
+<li>What is the sum of &#8736;a+&#8736;b+&#8736;c+&#8736;d+&#8736;e?
+<br>
+<img class="page" src="imagesPg3/fiveangles.jpg" width="139" height="93" alt="Five Angles Sitting on a Line"></li>
+</ol>
+
+</div><!-- /collapse -->
+
+<div data-role="collapsible">
+<h3>Answers</h3>
+<ol>
+<li>right angle</li>
+<li>120&#8728;</li>
+<li>360&#8728;</li>
+</ol>
+</div><!-- /collapse -->
+
+</div><!-- /collapsible set -->
+</article>
+</div><!-- /content -->
+
+<div data-role="footer" data-position="fixed">
+<div data-role="navbar" data-id="PageMenu"> 
+<ul>
+<li><a href="#Contents" data-transition="fade">Contents</a></li> 
+</ul> 
+</div><!-- /navbar --> 
+</div><!-- /footer -->
+</div><!-- /LinesAngles page -->
+
+
+<!-- Parallel Lines [pg4] -->
+<div data-role="page" id="ParallelLines" data-theme="c">
+<div data-role="header" data-position="fixed">
+<a href="javascript:history.go(-1)" data-transition="fade">Back</a>
+<h1>Parallel Lines</h1>
+<a href="#AboutGeom" data-transition="fade">About</a>
+</div><!-- /header -->
+
+<div data-role="content">
+<article> 
+<img class="page" src="imagesPg4/illusion.jpg" width="150" height="100" alt="Parallel Illusion">
+
+<div data-role="collapsible-set">
+
+<div data-role="collapsible">
+<h3>Parallels and Transversals</h3>
+<img class="page" src="imagesPg4/transversal2.jpg" width="240" height="175" alt="Parallel and Transversal">
+<p class="instruction">
+Parallel lines are lines in a plane that do not intersect even when extended. A third line that crosses parallels is called a transversal. This divides the plane into three areas - above and below the parallels [exterior] and between them [interior.]</p>
+
+<img class="page" src="imagesPg4/transversal.jpg" width="240" height="175" alt="Parallel and Transversal">
+<p class="instruction">
+
+</p>
+</div><!-- /collapse -->
+
+<div data-role="collapsible">
+<h3>Transversals and Angles</h3>
+<img class="page" src="imagesPg4/angles.jpg" width="217" height="208" alt="Transversal and Angles">
+<p class="instruction">
+A transversal crossing parallel lines creates 8 angles which have "pair" names: alternate interior angles - &#8736;4, &#8736;6 and &#8736;3, &#8736;5; alternate exterior angles - &#8736;1, &#8736;7 and &#8736;2, &#8736;8; corresponding angles - &#8736;1, &#8736;5 and &#8736;2, &#8736;6 and &#8736;3, &#8736;7 and &#8736;4, &#8736;8.</p>
+<p class="instruction">
+ALTERNATE INTERIOR ANGLES ARE EQUAL; 
+ALTERNATE EXTERIOR ANGLES ARE EQUAL; 
+CORRESPONDING ANGLES ARE EQUAL</p>
+<img class="page" src="imagesPg4/eqangles.jpg" width="145" height="169" alt="Transversal and Equal Angle Pairs">
+</div><!-- /collapse -->
+
+<div data-role="collapsible">
+<h3>Other Parallelisms</h3>
+<img class="page" src="imagesPg4/stepladder.png" width="106" height="127" alt="Step Ladder">
+<p class="instruction">
+LINES PARALLEL TO A THIRD LINE ARE PARALLEL; 
+LINES PERPENDICULAR TO A THIRD LINE ARE PARALLEL.<br>
+In a step ladder, each step is parallel to the step immediately below it and the bottom step is parallel to the floor. Yardlines on a football field are parallel and perpendicular to the sidelines.
+</p>
+<img class="page" src="imagesPg4/football.jpg" width="170" height="113" alt="Football Field">
+
+</div><!-- /collapse -->
+
+
+<div data-role="collapsible">
+<h3>The Parallel Postulate</h3>
+<img class="page" src="imagesPg4/parapost.jpg" width="240" height="200" alt="Parallel Postulate">
+<p class="instruction">
+Euclid correctly postulated [meaning it cannot be proved] that only one line can pass through a point and be parallel to a given line. Contrary assumptions lead to alternate valid and consistent geometries.</p>
+<img src="imagesPg4/altgeo1.jpg" width="240" height="250" alt="Euclidean Geometry">
+<img src="imagesPg4/altgeo2.jpg" width="240" height="250" alt="Elliptic Geometry">
+<img src="imagesPg4/altgeo3.jpg" width="240" height="250" alt="Hyperbolic Geometry">
+</div><!-- /collapse -->
+
+<div data-role="collapsible">
+<h3>Self Quiz</h3>
+<ol>
+<li>Name the angle pair.<br>
+<img class="page" src="imagesPg4/corresp.jpg" width="175" height="160" alt="Corresponding Angles"></li>
+<li>True or False?
+<img class="page" src="imagesPg4/true.jpg" width="192" height="107" alt="Equal Alternate Interior Angles"></li>
+<li>What geometry is suggested by the surface of a chip?<br><br>
+<img class="page" src="imagesPg4/chips.jpg" width="200" height="146" alt="Potato Chips"></li>
+</ol>
+</div><!-- /collapse -->
+
+
+<div data-role="collapsible">
+<h3>Answers</h3>
+<ol>
+<li>corresponding angles</li>
+<li>true</li>
+<li>hyperbolic</li>
+</ol>
+</div><!-- /collapse -->
+</div><!-- /collapsible set -->
+
+
+</article>
+</div><!-- /content -->
+
+<div data-role="footer" data-position="fixed">
+<div data-role="navbar" data-id="PageMenu"> 
+<ul>
+<li><a href="#Contents" data-transition="fade">Contents</a></li> 
+</ul> 
+</div><!-- /navbar --> 
+</div><!-- /footer -->
+</div><!-- /ParallelLines page -->
+
+
+<!-- Triangles [pg5] -->
+<div data-role="page" id="Triangles" data-theme="c">
+<div data-role="header" data-position="fixed">
+<a href="javascript:history.go(-1)" data-transition="fade">Back</a>
+<h1>Triangles</h1>
+<a href="#AboutGeom" data-transition="fade">About</a>
+</div><!-- /header -->
+
+<div data-role="content">
+<article> 
+<img class="page" src="imagesPg5/triangles.jpg" width="115" height="100" alt="Triangles">
+
+<div data-role="collapsible-set">
+
+<div data-role="collapsible">
+<h3>Triangle Classification</h3>
+<img class="page" src="imagesPg5/TriTypes.png" width="250" height="600" alt="Triangles Types">
+
+<p class="instruction">A triangle [three sides-three angles] has two names; one identifies the nature of its sides and the other describes its angles.<br><br>
+A triangle with two equal sides is isosceles and no equal side is scalene. If all three angles are less than 90&#8728;, it's acute. If one angle is 90&#8728;, it's a right triangle and if one angle is greater than 90&#8728;, it's obtuse. A triangle cannot contain more than one right or one obtuse angle.<br><br> If all three sides are equal, it's equilateral. All equilateral triangles are acute and equiangular. These properties produce seven general triangle classifications.</p>
+</div><!-- /collapse -->
+
+<div data-role="collapsible">
+<h3>Angle Sum Theorem</h3>
+<img class="page" src="imagesPg5/triangleSum1.jpg" width="250" height="185" alt="Triangle Angles Sum is 180 Degrees"> 
+<p class="instruction">
+THE SUM OF THE THREE ANGLES OF EVERY TRIANGLE IS 180&#8728;.<br><br>
+Ready for a simple proof? - see following figure.<br><br>
+Only one line passes through A parallel to BC. [Euclid's Parallel Postulate]<br>
+Therefore, the yellow angles are equal and the green angles are equal. [Alternate interior angles created by parallels and a transversal]<br>
+But [angles on the line], &#8736;y + &#8736;z + &#8736;x = 180&#8728;. [Angles that sit on a line add to 180&#8728;]<br>
+Therefore [inside the triangle], &#8736;y + &#8736;z + &#8736;x = 180&#8728; [The angles of the triangle are the same as those on the line] 
+</p>
+<img class="page" src="imagesPg5/triangleSum2.jpg" width="250" height="185" alt="Triangle Angles Sum is 180 Degrees"> 
+<p class="instruction">Since the angle sum is 180&#8728;, each angle in the equilateral-equiangular triangle must be 60&#8728;.</p><img class="page" src="imagesPg5/EqTri.png" width="122" height="110" alt="Equilateral Triangle">
+</div><!-- /collapse -->
+
+<div data-role="collapsible">
+<h3>Pons Asinorum</h3>
+<p class="instruction">IF TWO SIDES OF A TRIANGLE ARE EQUAL, THE ANGLES OPPOSITE THEM ARE EQUAL or <br>THE BASE ANGLES OF AN ISOSCELES TRIANGLE ARE EQUAL.<br> If AB = AC, then &#8736;B  = &#8736;C.</p>
+<img class="page" src="imagesPg5/PonsAss.jpg" width="206" height="245" alt="Pons Asinorum">
+<p class="instruction">Pons Asinorum is latin for "bridge of asses". Lengend claims that the proof of this theorem "in the old days" required a diagram that resembled a bridge, and that the proof was so difficult that only the scholars could understand it and "pass over the bridge", leaving the "asses" behind.<br><br>
+Triangles are the strongest shape because of they can 
+bear weight without geometric distortion.</p><br>
+<img class="page" src="imagesPg5/bridge.png" width="210" height="210" alt="Bridge">
+<img class="page" src="imagesPg5/gable.jpg" width="200" height="133" alt="Gable">
+
+</div><!-- /collapse -->
+
+<div data-role="collapsible">
+<h3>Pascal's Triangle</h3>
+<img class="page" src="imagesPg5/PascalTri.jpg" width="201" height="202" alt="Pascal's Triangle"> 
+<p class="instruction">The numbers in Pascal's triangle provide the coefficients in the binomial expansion.</p>
+<img class="page" src="imagesPg5/BinEx.jpg" width="250" height="165" alt="Binomial Expansion">
+</div><!-- /collapse -->
+
+
+<div data-role="collapsible">
+<h3>Exterior Angle Theorem</h3>
+<img class="page" src="imagesPg5/extAng.jpg" width="200" height="160" alt="Exterior Angle"> 
+<p class="instruction">
+An exterior angle of a triangle equals the sum of the two remote angles. Can you see why?<br></p>
+<ol>
+<li>A + B = 180, why?</li>
+<li>[C + D] + B = 180, why?</li>
+<li>therefore, A + B = [C + D] + B, why?</li>
+<li>therefore, A = C + D, why?<br></li>
+</ol>
+</div><!-- /collapse -->
+
+<div data-role="collapsible">
+<h3>Self Quiz</h3>
+<ol>
+<li>Provide the answers to "why?" in the previous section.<br></li>
+<li>Classify a triangle with two equal sides.</li>
+<li><img class="page" src="imagesPg5/Q3.png" width="200" height="230" alt="Question 3"></li>
+</ol>
+</div><!-- /collapse -->
+
+
+<div data-role="collapsible">
+<h3>Answers</h3>
+<ol>
+<li>
+	<ol>
+	<li>angles on a line</li>
+	<li>triangle angle sum</li>
+	<li>both quantities equal 180</li>
+	<li>subtract B from both sides</li>
+	</ol>
+</li>
+<li>Isosceles</li>
+<li>50&#8728;</li>
+</ol>
+</div><!-- /collapse -->
+
+</div><!-- /collapsible set -->
+
+
+</article>
+</div><!-- /content -->
+<div data-role="footer" data-position="fixed">
+<div data-role="navbar" data-id="PageMenu"> 
+<ul>
+<li><a href="#Contents" data-transition="fade">Contents</a></li> 
+</ul> 
+</div><!-- /navbar --> 
+</div><!-- /footer -->
+</div><!-- /Triangles page -->
+
+<!-- Pythagorean Theorem [pg6] -->
+<div data-role="page" id="PythagoreanTheorem" data-theme="c">
+<div data-role="header" data-position="fixed">
+<a href="javascript:history.go(-1)" data-transition="fade">Back</a>
+<h1>Pythagorean Theorem</h1>
+<a href="#AboutGeom" data-transition="fade">About</a>
+</div><!-- /header -->
+
+
+<div data-role="content">
+<article> 
+<img class="page" src="imagesPg6/PTdiagram.png" width="220" height="178" alt="Pythagorean Theorem Diagram">
+
+<div data-role="collapsible-set">
+
+
+<div data-role="collapsible">
+<h3>The Pythagorean Theorem</h3>
+<p class="instruction">
+The Pythagorean Theorem is probably the most well known geometric theorem. It says that in a right triangle, the sum of the squares of the sides, called legs,  will equal the square of the hypotenuse [the slant side.] A&#178; + B&#178; = C&#178;.<br><br>
+<img class="page" src="imagesPg6/PT3.jpg" width="176" height="164" alt="Pythagorean Theorem Diagram">
+
+Example: if the legs of a right triangle are 3 and 4, then 3x3=9, and 4x4=16, and 9+16=25, and so the hypotenuse is 5.<br><br> 
+
+Archeologists use the Pythagorean Theorem in field excavations. When they start a dig, they place a rectangular grid over the site surface. To lay out an accurate grid system, archeologists use the Theorem, X&#178; + Y&#178; = D&#178;. After deciding how long the baselines [X- and Y- axis] should be, the proper length of the diagonal is calculated using the Pythagorean theorem to make sure the quadrant is a rectangle. Corner stakes will then be placed to mark the accurate location of the site.</p>
+</div><!-- /collapse -->
+
+<div data-role="collapsible">
+<h3>Pythagoras Who?</h3>
+<p class="instruction">
+
+Pythagoras was an influential Greek mathematician and philosopher, best known for the theory to which he gave his name.<br><br>
+<img class="page"  src="imagesPg6/pythagoras1.jpg" width="167" height="252" alt="Pythagoras"><br><br>
+
+Very little is known about Pythagoras's life. He is thought to have been born on the Greek island of Samos approximately 569 BC.<br><br>
+
+He travelled widely in his youth, visiting Egypt and Persia. He settled in the city of Crotone in southern Italy. There he began teaching and soon had a clutch of students who lived a structured life of study and exercise, inspired by a philosophy based around mathematics. This circle came to be known as the Pythagoreans.<br><br>
+
+Pythagoreans believed that everything could be reduced to numbers: the whole universe had been built using mathematics. The truth behind the everyday reality we experience lay in numbers.
+</p>
+</div><!-- /collapse -->
+
+<div data-role="collapsible">
+<h3>Find the Third Side</h3>
+<p class="instruction">
+<img class="page"  src="imagesPg6/pytheorem1.jpg" width="170" height="193" alt="Right Triangle"><br>
+Given A=6 and B=4, find C.<br>
+A&#178; + B&#178; = C&#178;<br>
+6&#178; + 4&#178; = C&#178;<br>
+36 + 16 = C&#178;<br>
+C&#178; = 52<br>
+C = &#8730; 52 = 7.2<br><br>
+
+Given A=8 and C=12, find B.<br>
+A&#178; + B&#178; = C&#178;<br>
+8&#178; + B&#178; = 12&#178;<br>
+B&#178; = 12&#178; - 8&#178;<br>
+B&#178; = 144 - 64<br>
+B = &#8730; 80 = 8.9<br><br>
+</p>
+</div><!-- /collapse -->
+
+<div data-role="collapsible">
+<h3>Visual Proof</h3>
+<p class="instruction">
+<img class="page"  src="imagesPg6/proof.jpg" width="157" height="163" alt="Visual Proof"><br>
+Study the grid. Find the right triangle outlined in red. See the squares built on the sides - yellow, blue, and green.  Count the number of triangles in each square - yellow (4), blue (4) and green (8). Therefore, the green square equals the sum of the yellow square + blue square.
+ </p>
+</div><!-- /collapse -->
+
+<div data-role="collapsible">
+<h3>Self Quiz</h3>
+<ol>
+<li>What is the name of a right triangle's slant side?<br><br></li>
+<li>Is this triangle a right triangle? Why or why not?<br><img class="page"  src="imagesPg6/51213triangle.gif" width="150" height="80" alt="Right Triangle">
+<br>
+</li>
+<li>Find the missing side.<br>
+<img class="page" src="imagesPg6/94041triangle.gif" width="150" height="60" alt="Right Triangle"></li>
+</ol>
+</div><!-- /collapse -->
+
+
+<div data-role="collapsible">
+<h3>Answers</h3>
+<ol>	
+<li>hypotenuse</li>
+<li>yes, 25 + 144 = 169</li>
+<li>41</li>
+</ol>
+</div><!-- /collapse -->
+
+</div><!-- /collapsible set -->
+
+
+
+</article>
+</div><!-- /content -->
+
+<div data-role="footer" data-position="fixed">
+<div data-role="navbar" data-id="PageMenu"> 
+<ul>
+<li><a href="#Contents" data-transition="fade">Contents</a></li> 
+</ul> 
+</div><!-- /navbar --> 
+</div><!-- /footer -->
+</div><!-- /PythagorenTheorem page -->
+
+<!-- The Rectangle [pg7] -->
+<div data-role="page" id="Rectangle" data-theme="c">
+<div data-role="header" data-position="fixed">
+<a href="javascript:history.go(-1)" data-transition="fade">Back</a>
+<h1>The Rectangle</h1>
+<a href="#AboutGeom" data-transition="fade">About</a>
+</div><!-- /header -->
+
+<div data-role="content">
+<article> 
+<img class="page" src="imagesPg7/rect1.jpg" width="200" height="112" alt="Rectangle">
+
+<div data-role="collapsible-set">
+
+<div data-role="collapsible">
+<h3>Definition</h3>
+<img class="page" src="imagesPg7/rect3.png" width="150" height="107" alt="Rectangle">
+<p class="instruction">
+Geometric figures have several classifications, one is based on the number of sides it has. A figure with four sides [four angles] is called a quadrilateral. The rectangle is a quadrilateral with four right angles and opposite sides equal. The sides are usually referred to as length and width or base and height. The rectangle is probably the most comman and useful quadrilateral.
+</p>
+</div><!-- /collapse -->
+
+<div data-role="collapsible">
+<h3>Perimeter</h3>
+<img class="page" src="imagesPg7/rect5.png" width="205" height="135" alt="Rectangle">
+<p class="instruction">
+The distance around any geometric polygon [figure with straight sides] is the sum of its sides.<br><br> For a rectangle that would be: <br>
+P =  L + W + L + W  or<br>
+P = 2L + 2W.<br><br>
+The perimeter of the rectangle below is:<br><br>
+<img class="page" src="imagesPg7/rect4.jpg" width="200" height="120" alt="Rectangle">
+                                         
+P = 2L + 2W <br>
+P = 2(8) + 2(4)<br>
+P = 16 + 8<br>
+P = 24 cm<br>
+</p>
+<p class="instruction">
+We would be using perimeter to frame a painting or buy fencing or calculate how far it is to walk around the gym. Perimeter is 1-dimensional and is measured in linear units such as inches, feet or meters.<br><br>
+<img class="page" src="imagesPg7/fence.jpg" width="199" height="78" alt="Yard with Fence">
+</div><!-- /collapse -->
+
+<div data-role="collapsible">
+<h3>Area</h3>
+<p class="instruction">                      
+The area of a rectangle is the number of square units inside the rectangle.</p>
+<img class="page" src="imagesPg7/rect6.gif" width="202" height="103" alt="Rectangle">
+<p class="instruction">
+To calculate the number of squares, multiply the the number of columns [Length or Base] by the number of rows [Width or Height.]<br><br>
+
+A = LW<br>
+A = 5 X 3<br>
+A = 15 sq<br><br>
+
+Area is 2-dimensional: it has a length and a width. Area is measured in square units such as square inches, square feet or square meters.</p>
+<p class="instruction">
+We would be using area to calculate how much carpet to buy for a room or how much wall paper or paint is needed for the walls.</p>
+</div><!-- /collapse -->
+
+<div data-role="collapsible">
+<h3>The Golden Ratio</h3>
+<img class="page" src="imagesPg7/GoldRect.jpg" width="225" height="139" alt="Golden Rectangle">
+
+<p class="instruction">
+The golden rectangle has the property that when a square is removed a smaller rectangle of the same shape remains. Thus a smaller square can be removed, and so on, with a spiral pattern resulting.<br><br>
+The golden rectangle is a rectangle whose side lengths are in the golden ratio, which is approximately 1.618 and represented by the Greek letter phi. The common 3 X 5 card comes pretty close to this ratio.</p> 
+<img class="page" src="imagesPg7/phi.gif" width="97" height="121" alt="Greek letter phi">
+<p class="instruction">
+Some artists and architects believe the Golden Ratio makes the most pleasing and beautiful shape. Many buildings and artworks have the Golden Ratio in them, such as the Parthenon in Greece.
+</p><br> 
+<img class="page" src="imagesPg7/parthenon.jpg" width="200" height="124" alt="The Parthenon">
+</div><!-- /collapse -->
+
+                 
+<div data-role="collapsible">
+<h3>Self Quiz</h3>
+<ol>
+<li>
+A 2-meter wide path is constructed around the outside of a rectangular garden that is 50 m by 100 m.<br><br>
+<img class="page" src="imagesPg7/rect9.jpg" width="175" height="88" alt="Rectangle"><br>
+
+What is the area of the garden?<br>
+</li>
+<li>What is the perimeter of the garden?<br></li>
+<li>What is the area of the pathway?</li>
+</ol>
+</div><!-- /collapse -->
+
+
+<div data-role="collapsible">
+<h3>Answers</h3>
+<ol>	
+<li>5000 sq m</li>
+<li>300 m</li>
+<li>616 sq m</li>
+</ol>
+</div><!-- /collapse -->
+
+
+</div><!-- /collapsible set -->
+
+</article>
+</div><!-- /content -->
+
+<div data-role="footer" data-position="fixed">
+<div data-role="navbar" data-id="PageMenu"> 
+<ul>
+<li><a href="#Contents" data-transition="fade">Contents</a></li> 
+</ul> 
+</div><!-- /navbar --> 
+</div><!-- /footer -->
+</div><!-- /Rectangle page -->
+
+<!-- Final Exam [pg8] -->
+<div data-role="page" id="FinalExam" data-theme="c">
+<div data-role="header" data-position="fixed">
+<a href="javascript:history.go(-1)" data-transition="fade">Back</a>
+<h1>Final Exam</h1>
+<a href="#AboutGeom" data-transition="fade">About</a>
+</div><!-- /header -->
+
+<div data-role="content">
+<article>
+<img class="head" src="MMMlogo.png" width="220" height="60" alt="MMM Header Logo">
+<p class="instruction">
+The Final Exam is multiple choice. There are 10 questions with four choices each. Click your choice for each question, then click to get your score. Good Luck.</p><br>
+<a href="http://www.ixorawebdesign.com/
+MasterApps/Geometry/FinalEx.html" data-role="button" data-theme="c" data-transition="fade">Final Exam</a>
+
+</article>
+</div><!-- content -->
+
+<div data-role="footer" data-position="fixed">
+<div data-role="navbar" data-id="PageMenu"> 
+<ul>
+<li><a href="#Contents" data-transition="fade">Contents</a></li> 
+</ul> 
+</div><!-- /navbar --> 
+</div><!-- /footer -->
+</div><!-- /Final Exam page -->
+
+</body>
+</html>
+
