@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns	= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		= "com.msmathmaster.euclid"
+	version 	= "3.0.0">
+	versionCode="4"
+
+<name>Euclid</name>
+
+<description>Euclid is a short geometry primer that includes five of the most basic and well known principles of plane geometry:lines and angles, parallel lines, triangles, the Pythagorean Theorem, and rectangles.
+
+The topics are presented in simple, clear, visual, informal terms; no attempt is made to be "mathematically rigorous." The emphasis is on practical use, enjoyment, and beauty.
+ 
+Each topic includes a self quiz and a final exam is offered at the end of "the course".
+
+Euclid is an apps project of Ms Math Master that includes elementary number drills and simple puzzles.
+
+A primer that will change your mind about geometry ==> Euclid.</description> 
+
+<author href="http://www.msmathmaster.com"
+email="FBailey@msmathmaster.com">
+Frankie Bailey</author>
+
+<icon src="hdpi.png" platform="android" qualifier="hdpi" />
+<icon src="mdpi.png" platform="android" qualifier="mdpi" />
+<icon src="xhdpi.png" platform="android" qualifier="xhdpi" />
+<icon src="xxhdpi.png" platform="android" qualifier="xxhdpi" />
+<icon src="xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
+
+
+<platform name="android">
+  <preference name="phonegap-version" value="cli-5.2.0" />
+  <preference name="orientation" value="portrait" />
+</platform>
+
+<plugin name="cordova-plugin-whitelist" />
+<access origin="http://code.jquery.com/*" />
+<allow-navigation href="*" />
+
+
+</widget>
